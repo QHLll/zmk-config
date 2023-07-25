@@ -31,19 +31,19 @@
 
         FN1 {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2     &kp N3       &kp N4    &kp N5     &kp N6     &kp N7     &kp N8   &kp N9   &kp N0  &kp DEL
-    &none   &none   &none   &kp LBKT     &kp RBKT  &kp BSLH  &kp MINUS  &kp EQUAL   &kp SEMI  &kp SQT  &kp INS
-   &trans   &none   &none      &none        &none     &none      &none      &none  &kp COMMA  &kp DOT    &none
-    &none   &none   &none  &kp SPACE  &lt 4 SPACE     &to 5      &none      &none
+&kp GRAVE  &kp N1  &kp N2     &kp N3     &kp N4    &kp N5     &kp N6     &kp N7     &kp N8   &kp N9   &kp N0  &kp DEL
+    &none   &none   &none   &kp LBKT   &kp RBKT  &kp BSLH  &kp MINUS  &kp EQUAL   &kp SEMI  &kp SQT  &kp INS
+   &trans   &none   &none      &none      &none     &none      &none      &none  &kp COMMA  &kp DOT    &none
+    &none   &none   &none  &kp SPACE  &kp SPACE     &none      &none      &none
             >;
         };
 
         FN2 {
             bindings = <
-       &none  &none  &none   &none   &none  &none      &none  &kp HOME     &kp UP    &kp END      &none  &none
-&kp CAPSLOCK  &none  &none   &none   &none  &none  &kp PG_UP  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN
-      &trans  &none  &none   &none   &none  &none      &none     &none  &kp COMMA    &kp DOT      &none
-       &none  &none  &none  &trans  &trans  &none      &none     &none
+       &none  &none  &none   &none  &none  &none      &none  &kp HOME     &kp UP    &kp END      &none  &none
+&kp CAPSLOCK  &none  &none   &none  &none  &none  &kp PG_UP  &kp LEFT   &kp DOWN  &kp RIGHT  &kp PG_DN
+      &trans  &none  &none   &none  &none  &none      &none     &none  &kp COMMA    &kp DOT      &none
+       &none  &none  &none  &trans  &mo 4  &to 5      &none     &none
             >;
         };
 
@@ -69,10 +69,10 @@
 
         FN5 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans    &trans  &kp N7  &kp N8  &kp N9     &kp N0  &kp PLUS
-&trans  &trans  &trans  &trans     &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp MINUS
-&trans  &trans  &trans  &trans     &trans  &trans    &trans  &kp N1  &kp N2  &kp N3   &kp STAR
-&trans  &trans  &trans  &trans  &kp EQUAL   &to 0  &kp FSLH  &trans
+&none  &none  &none  &none      &none  &none     &none  &kp N7  &kp N8  &kp N9     &kp N0  &kp PLUS
+&none  &none  &none  &none      &none  &none     &none  &kp N4  &kp N5  &kp N6  &kp MINUS
+&none  &none  &none  &none      &none  &none     &none  &kp N1  &kp N2  &kp N3   &kp STAR
+&none  &none  &none  &none  &kp EQUAL  &to 0  &kp FSLH   &none
             >;
         };
     };
