@@ -14,14 +14,6 @@
 
 
 / {
-    behaviors {
-        rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,7 +44,7 @@
             &kp LSHFT          &none  &none  &none  &none &kp KP_PLUS  &none  &none  &none  &kp DOT          &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &kp C_PREV  &kp C_PP  &kp C_NEXT
 			       >;
-          sensor-bindings = <&rgb_encoder RGB_BRI RGB_BRD>;
+          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
         };
         lower_layer {
