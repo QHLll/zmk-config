@@ -38,6 +38,12 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&kp B>;
         };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
     };
 
     keymap {
@@ -81,6 +87,7 @@
 &none       &none         &none         &none         &none         &none         &none   &none            &none   &none    &bootloader
 &none       &none         &none         &none         &none         &none         &none   &rgb_ug RGB_TOG
             >;
+            sensor-bindings = <&rgb_encoder RGB_BRI RGB_BRD>;
         };
     };
 };
