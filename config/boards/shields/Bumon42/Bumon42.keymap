@@ -52,7 +52,7 @@
             &kp LSHFT          &none  &none  &none  &none &kp KP_PLUS  &none  &none  &none  &kp DOT          &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &kp C_PREV  &kp C_PP  &kp C_NEXT
 			       >;
-          sensor-bindings = <&rgb_encoder>;
+          sensor-bindings = <&rgb_encoder RGB_BRI RGB_BRD>;
 
         };
         lower_layer {
