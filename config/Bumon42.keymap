@@ -81,7 +81,7 @@
 &none       &none         &none         &none         &none         &none         &none   &none            &none   &none    &bootloader
 &none       &none         &none         &none         &none         &none         &none   &rgb_ug RGB_TOG
             >;
-            sensor-bindings = <&rgb_encoder RGB_BRI RGB_BRD>;
+            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
