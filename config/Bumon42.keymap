@@ -67,9 +67,9 @@
 
         layer_2 {
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET  &kp LBKT   &kp RBKT  &kp LBRC   &kp RBRC   &kp BSPC
-&trans  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL  &kp SEMI  &kp DQT    &kp ENTER
-&trans  &none      &kp TILDE  &kp PIPE   &kp BSLH  &kp UNDER  &kp PLUS   &kp SEMI   &kp SQT   &kp GRAVE  &trans
+&trans  &kp EXCL   &kp AT     &kp POUND  &kp DLLR  &kp PRCNT  &none      &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &kp BSPC
+&trans  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL  &kp SEMI   &kp DQT   &kp ENTER
+&trans  &kp GRAVE  &kp TILDE  &kp PIPE   &kp BSLH  &none      &kp UNDER  &kp PLUS   &kp COLON  &kp SQT   &trans
 &trans  &trans     &trans     &trans     &trans    &trans     &trans     &trans
             >;
 
