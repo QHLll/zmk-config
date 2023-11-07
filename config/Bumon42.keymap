@@ -15,12 +15,6 @@
 
 / {
     macros {
-        M0: M0 {
-            compatible = "zmk,behavior-macro";
-            label = "M0";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp EQUAL>;
-        };
     };
 
     behaviors {
@@ -56,10 +50,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none      &kp BSPC
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-&trans  &none   &none   &none   &none   &none   &none      &none     &none     &none      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &kp N1     &kp N2     &kp N3    &kp N4   &kp N5     &kp N6     &kp N7    &kp N8  &kp N9     &kp N0     &kp BSPC
+&trans  &kp PG_UP  &kp PG_DN  &kp HOME  &kp END  &kp MINUS  &kp EQUAL  &kp LEFT  &kp UP  &kp RIGHT  &kp ENTER
+&trans  &none      &none      &none     &none    &none      &none      &kp DOWN  &none   &none      &trans
+&trans  &trans     &trans     &trans    &trans   &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -67,10 +61,10 @@
 
         layer_2 {
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp POUND  &kp DLLR  &kp PRCNT  &none      &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &kp BSPC
-&trans  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL  &kp SEMI   &kp DQT   &kp ENTER
-&trans  &kp GRAVE  &kp TILDE  &kp PIPE   &kp BSLH  &none      &kp UNDER  &kp PLUS   &kp COLON  &kp SQT   &trans
-&trans  &trans     &trans     &trans     &trans    &trans     &trans     &trans
+&trans  &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &kp GRAVE  &kp BSLH  &kp MINUS  &kp EQUAL  &none      &none      &kp SEMI   &kp DQT    &kp LBKT  &kp RBKT
+&trans  &kp TILDE  &kp PIPE  &kp UNDER  &kp PLUS   &none      &none      &kp COLON  &kp SQT    &kp LBRC  &kp RBRC
+&trans  &trans     &trans    &trans     &trans     &trans     &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
