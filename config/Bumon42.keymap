@@ -68,9 +68,9 @@
 
         layer_1 {
             bindings = <
-&kp ESC  &kp N1  &kp N2    &kp N3  &kp N4  &kp N5  &kp LBKT  &kp RBKT   &kp UP    &kp MINUS  &kp EQUAL  &kp BSPC
-&trans   &kp N6  &kp N7    &kp N8  &kp N9  &kp N0  &kp SEMI  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RET
-&trans   &Phone  &Address  &Pwd    &none   &none   &kp SQT   &kp GRAVE  &none     &none      &kp BSLH
+&kp ESC  &kp N1  &kp N2    &kp N3  &kp N4  &kp N5  &kp LBKT  &kp RBKT   &kp UP     &kp MINUS  &kp EQUAL  &kp BSPC
+&trans   &kp N6  &kp N7    &kp N8  &kp N9  &kp N0  &kp SEMI  &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
+&trans   &Phone  &Address  &Pwd    &none   &none   &kp SQT   &kp GRAVE  &kp COMMA  &kp DOT    &kp BSLH
 &trans   &trans  &trans    &trans  &trans  &trans  &trans    &trans
             >;
 
