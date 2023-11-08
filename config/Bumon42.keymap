@@ -57,9 +57,9 @@
 
         layer_0 {
             bindings = <
-&kp TAB                            &kp Q     &kp W     &kp E        &kp R      &kp T  &kp Y     &kp U       &kp I    &kp O     &kp P      &kp BSPC
-&kp LCTRL                          &kp A     &kp S     &kp D        &kp F      &kp G  &kp H     &kp J       &kp K    &kp L     &kp ENTER
-&Shft_caps                         &kp Z     &kp X     &kp C        &kp V      &kp B  &kp N     &kp M       &kp DOT  &kp FSLH  &kp RSHFT
+&kp TAB                            &kp Q     &kp W     &kp E        &kp R      &kp T  &kp Y     &kp U       &kp I      &kp O    &kp P      &kp BSPC
+&kp LCTRL                          &kp A     &kp S     &kp D        &kp F      &kp G  &kp H     &kp J       &kp K      &kp L    &kp ENTER
+&Shft_caps                         &kp Z     &kp X     &kp C        &kp V      &kp B  &kp N     &kp M       &kp COMMA  &kp DOT  &kp FSLH
 &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LALT  &kp LGUI  &lt 1 SPACE  &kp SPACE  &mo 2  &kp RGUI  &kp K_MUTE
             >;
 
@@ -68,10 +68,10 @@
 
         layer_1 {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6    &kp N7     &kp N8    &kp MINUS  &kp EQUAL  &kp GRAVE
-&trans   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &kp RET
-&trans   &none   &none   &none   &none   &none   &kp BSLH  &kp COMMA  &kp LBKT  &kp RBKT   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans
+&kp ESC  &kp N1  &kp N2    &kp N3  &kp N4  &kp N5  &kp LBKT  &kp RBKT  &kp UP  &kp MINUS  &kp EQUAL  &kp GRAVE
+&trans   &kp N6  &kp N7    &kp N8  &kp N9  &kp N0  &kp SEMI  &kp LEFT  &kp UP  &kp RIGHT  &kp RET
+&trans   &Phone  &Address  &Pwd    &none   &none   &kp SQT   &none     &none   &none      &kp BSLH
+&trans   &trans  &trans    &trans  &trans  &trans  &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
