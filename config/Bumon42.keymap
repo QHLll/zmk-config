@@ -71,10 +71,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp N1  &kp N2    &kp N3  &kp N4  &kp N5  &kp LC(ENTER)  &kp HOME   &kp UP     &kp END    &none     &kp BSPC
-&trans  &kp N6  &kp N7    &kp N8  &kp N9  &kp N0  &kp LA(ENTER)  &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
-&trans  &Phone  &Address  &Pwd    &none   &none   &kp SQT        &kp GRAVE  &kp COMMA  &kp DOT    &kp BSLH
-&trans  &trans  &trans    &trans  &trans  &trans  &trans         &trans
+&trans  &kp N1  &kp N2  &kp N3    &kp N4             &kp N5         &kp LC(ENTER)   &kp HOME          &kp UP     &kp END    &kp LG(LA(T))  &kp BSPC
+&trans  &kp N6  &kp N7  &kp N8    &kp N9             &kp N0         &kp LA(ENTER)   &kp LEFT          &kp DOWN   &kp RIGHT  &kp RET
+&trans  &Pwd    &Phone  &Address  &kp LS(LG(COMMA))  &kp LC(LG(O))  &kp LS(LA(UP))  &kp LS(LA(DOWN))  &kp COMMA  &kp DOT    &kp BSLH
+&trans  &trans  &trans  &trans    &trans             &trans         &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -82,10 +82,10 @@
 
         layer_2 {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5  &kp F6  &kp F7  &kp F8           &kp F9  &kp F10       &kp F11      &kp F12
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &none   &none   &none            &none   &none         &sys_reset
-&none       &none         &none         &none         &none   &none   &none   &none            &none   &out OUT_TOG  &bootloader
-&none       &none         &none         &none         &none   &none   &none   &rgb_ug RGB_TOG
+&kp F1      &kp F2           &kp F3           &kp F4           &kp F5  &kp F6  &kp F7  &kp F8           &kp F9  &kp F10       &kp F11      &kp F12
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none   &none   &none   &none            &none   &none         &sys_reset
+&none       &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none   &none   &none   &none            &none   &out OUT_TOG  &bootloader
+&none       &none            &none            &none            &none   &none   &none   &rgb_ug RGB_TOG
             >;
 
             sensor-bindings = <&rgb_encoder>;
