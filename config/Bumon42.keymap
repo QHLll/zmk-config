@@ -60,13 +60,11 @@
 
         layer_0 {
             bindings = <
-&kp ESC                            &kp Q     &kp W     &kp E        &kp R        &kp T  &kp Y     &kp U       &kp I      &kp O    &kp P      &kp BSPC
-&mt LCTRL TAB                      &kp A     &kp S     &kp D        &kp F        &kp G  &kp H     &kp J       &kp K      &kp L    &kp ENTER
-&mt LSHFT CAPS                     &kp Z     &kp X     &kp C        &kp V        &kp B  &kp N     &kp M       &kp COMMA  &kp DOT  &kp FSLH
-&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LGUI  &kp LALT  &lt 1 SPACE  &lt 2 SPACE  &mo 3  &kp RGUI  &kp K_MUTE
+&kp ESC                            &kp Q     &kp W     &kp E        &kp R        &kp T  &kp Y     &kp U          &kp I      &kp O    &kp P      &kp BSPC
+&mt LCTRL TAB                      &kp A     &kp S     &kp D        &kp F        &kp G  &kp H     &kp J          &kp K      &kp L    &kp ENTER
+&mt LSHFT CAPS                     &kp Z     &kp X     &kp C        &kp V        &kp B  &kp N     &kp M          &kp COMMA  &kp DOT  &kp FSLH
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LALT  &kp LGUI  &lt 1 SPACE  &lt 2 SPACE  &mo 3  &kp RGUI  &kp RG(SPACE)
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
@@ -76,8 +74,6 @@
 &trans  &Pwd    &Phone  &Address  &kp LS(LG(COMMA))  &kp LC(LG(O))  &kp LS(LA(UP))  &kp LS(LA(DOWN))  &kp COMMA  &kp DOT    &kp BSLH
 &trans  &trans  &trans  &trans    &trans             &trans         &trans          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         layer_2 {
@@ -96,8 +92,6 @@
 &none       &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none   &none   &none   &none            &none   &out OUT_TOG  &bootloader
 &none       &none            &none            &none            &none   &none   &none   &rgb_ug RGB_TOG
             >;
-
-            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
