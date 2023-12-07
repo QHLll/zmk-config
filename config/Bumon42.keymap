@@ -68,17 +68,17 @@
 
         layer_1 {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5  &kp N6     &kp N7     &kp N8    &kp N9   &kp N0  &trans
-&trans  &none   &none   &kp GRAVE  &kp BSLH  &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT  &trans
-&trans  &none   &none   &none      &none     &none   &kp LBKT   &kp RBKT   &none     &none    &trans
+&trans  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5  &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &trans
+&trans  &none   &none   &kp GRAVE  &kp BSLH  &none   &kp MINUS  &kp EQUAL  &kp SEMI   &kp SQT  &trans
+&trans  &none   &none   &none      &none     &none   &kp LBKT   &kp RBKT   &kp COMMA  &kp DOT  &kp FSLH
 &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&none  &none  &none          &none          &kp LG(LA(M))  &kp LG(O)  &none           &none             &kp UP    &none      &none  &none
-&none  &none  &kp LG(LA(T))  &kp LA(ENTER)  &kp LC(ENTER)  &kp LC(O)  &none           &kp LEFT          &kp DOWN  &kp RIGHT  &none
+&none  &none  &none          &none          &kp LG(LA(M))  &kp LG(O)  &none           &kp PG_UP         &kp UP    &kp HOME   &kp END  &none
+&none  &none  &kp LG(LA(T))  &kp LA(ENTER)  &kp LC(ENTER)  &kp LC(O)  &kp PG_DN       &kp LEFT          &kp DOWN  &kp RIGHT  &none
 &none  &Pwd   &Phone         &Address       &none          &none      &kp LS(LG(UP))  &kp LS(LG(DOWN))  &none     &none      &none
 &none  &none  &none          &none          &none          &none      &none           &none
             >;
