@@ -79,7 +79,7 @@
             bindings = <
 &none  &none  &none          &none          &kp LG(LA(M))  &kp LG(O)  &none           &none             &kp UP    &none      &none  &none
 &none  &none  &kp LG(LA(T))  &kp LA(ENTER)  &kp LC(ENTER)  &kp LC(O)  &none           &kp LEFT          &kp DOWN  &kp RIGHT  &none
-&none  &none  &none          &none          &none          &none      &kp LS(LG(UP))  &kp LS(LG(DOWN))  &none     &none      &none
+&none  &Pwd   &Phone         &Address       &none          &none      &kp LS(LG(UP))  &kp LS(LG(DOWN))  &none     &none      &none
 &none  &none  &none          &none          &none          &none      &none           &none
             >;
         };
