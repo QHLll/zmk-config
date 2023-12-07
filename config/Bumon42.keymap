@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
 // changed lwr and rse
@@ -60,37 +59,37 @@
 
         layer_0 {
             bindings = <
-&kp ESC                            &kp Q     &kp W     &kp E        &kp R        &kp T  &kp Y     &kp U          &kp I      &kp O    &kp P      &kp BSPC
-&mt LCTRL TAB                      &kp A     &kp S     &kp D        &kp F        &kp G  &kp H     &kp J          &kp K      &kp L    &kp ENTER
-&mt LSHFT CAPS                     &kp Z     &kp X     &kp C        &kp V        &kp B  &kp N     &kp M          &kp COMMA  &kp DOT  &kp FSLH
-&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LALT  &kp LGUI  &lt 1 SPACE  &lt 2 SPACE  &mo 3  &kp RGUI  &kp RG(SPACE)
+&kp ESC                            &kp Q     &kp W     &kp E  &kp R      &kp T  &kp Y     &kp U          &kp I      &kp O    &kp P        &kp BSPC
+&mt LCTRL TAB                      &kp A     &kp S     &kp D  &kp F      &kp G  &kp H     &kp J          &kp K      &kp L    &kp RET
+&mt LSHFT CAPSLOCK                 &kp Z     &kp X     &kp C  &kp V      &kp B  &kp N     &kp M          &kp COMMA  &kp DOT  &lt 1 SLASH
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LALT  &kp LGUI  &mo 2  &kp SPACE  &mo 3  &kp RGUI  &kp LG(SPACE)
             >;
         };
 
         layer_1 {
             bindings = <
-&kp GRAVE                          &kp N1     &kp N2    &kp N3     &kp N4    &kp N5     &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &kp BSPC
-&mt LCTRL TAB                      &kp MINUS  &kp DQT   &kp EQUAL  &kp SEMI  &kp UNDER  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp ENTER
-&mt LSHFT CAPSLOCK                 &kp SQT    &kp PLUS  &kp COLON  &kp LBKT  &kp RBKT   &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT    &kp FSLH
-&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LALT   &kp LGUI  &trans     &trans    &trans     &kp PIPE  &kp BSLH
+&trans  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5  &kp N6     &kp N7     &kp N8    &kp N9   &kp N0  &trans
+&trans  &none   &none   &kp GRAVE  &kp BSLH  &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT  &trans
+&trans  &none   &none   &none      &none     &none   &kp LBKT   &kp RBKT   &none     &none    &trans
+&trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &none          &kp LS(LG(COMMA))  &kp LC(LG(O))  &none     &none         &none       &kp LS(LA(UP))  &kp LS(LA(DOWN))  &none         &none   &trans
-&trans  &kp LG(LA(T))  &kp LC(ENTER)      &kp LA(ENTER)  &kp HOME  &kp END       &kp LEFT    &kp DOWN        &kp UP            &kp RIGHT     &trans
-&trans  &Pwd           &Phone             &Address       &none     &none         &none       &none           &kp C_BRI_DN      &kp C_BRI_UP  &trans
-&trans  &trans         &trans             &trans         &trans    &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP
+&none  &none  &none          &none          &kp LG(LA(M))  &kp LG(O)  &none           &none             &kp UP    &none      &none  &none
+&none  &none  &kp LG(LA(T))  &kp LA(ENTER)  &kp LC(ENTER)  &kp LC(O)  &none           &kp LEFT          &kp DOWN  &kp RIGHT  &none
+&none  &none  &none          &none          &none          &none      &kp LS(LG(UP))  &kp LS(LG(DOWN))  &none     &none      &none
+&none  &none  &none          &none          &none          &none      &none           &none
             >;
         };
 
         layer_3 {
             bindings = <
-&kp F1      &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7  &kp F8           &kp F9  &kp F10       &kp F11      &kp F12
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none   &none            &none   &none         &sys_reset
-&none       &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none   &none            &none   &out OUT_TOG  &bootloader
-&none       &none            &none            &none            &none            &none            &none   &rgb_ug RGB_TOG
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8           &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans           &trans  &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans           &trans  &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &rgb_ug RGB_TOG
             >;
         };
     };
